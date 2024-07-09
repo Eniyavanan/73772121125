@@ -1,24 +1,27 @@
 import java.util.*;
-public class Stringlength
-{
-    public static void main(String args[])
-    {
-        Scanner sc=new Scanner(System.in);
-        String str=sc.nextLine();
-        int len=str.length();
-        int count=26;
-        
-        for(int i=0;i<len;i++)
-        {
-        if(count>len)
-        {
-            System.out.println(str.matches("[A-Z]+")+"not String");
-            break;
-        }
-           else if('a'>=str.charAt(i)&&str.charAt(i)<='z'){
-                System.out.println("Complete String");
-                break;
-            }
-        }
-    }
+
+public class Pattern {
+
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		int n = s.nextInt();
+		char a = 'A';
+		for(int i=1;i<=n; i++) {
+			for(int j=1; j<=i;j++) {
+				System.out.print(a +" ");
+				
+			}
+			a++;
+			if(a>'z') {
+				break;
+			}
+			System.out.println();
+			
+		}
+		
+		
+		
+
+	}
+
 }
