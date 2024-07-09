@@ -1,0 +1,24 @@
+import java.util.*;
+public class Stringlength
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        String str=sc.nextLine();
+        int len=str.length();
+        int count=26;
+        
+        for(int i=0;i<len;i++)
+        {
+        if(count>len)
+        {
+            System.out.println(str.matches("[A-Z]+")+"not String");
+            break;
+        }
+           else if('a'>=str.charAt(i)&&str.charAt(i)<='z'){
+                System.out.println("Complete String");
+                break;
+            }
+        }
+    }
+}
