@@ -25,7 +25,7 @@ class calculate implements circle,rectangle,triangle{
     public void area2(){
         int b =10;
         int h =56;
-        int sum = b*h;
+        float sum =(float)0.5*b*h;
         System.out.println(sum);
     }
 }
