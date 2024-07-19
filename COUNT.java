@@ -6,8 +6,8 @@ public class Count {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		String st = sc.next();
-		int up = 0,lp =0,v=0,s =0,c=0,n=0;
+		String st = sc.nextLine();
+		int up = 0,lp =0,v=0,s =0,c=0,n=0,sp=0;
 				
 		char arr[] = st.toCharArray();
 		for(int i=0;i<arr.length;i++) {
@@ -32,8 +32,12 @@ public class Count {
 			else if(arr[i]>=33 && arr[i]<= 47 || arr[i] >= 58 && arr[i]<= 64) {
 				s++;
 			}
-			else{
+			else if(Character.isDigit(arr[i])) {
 				n++;
+				
+			}
+			else{
+				sp++;
 			}
 		
 }
@@ -42,6 +46,7 @@ public class Count {
 		System.out.println("VOWELS :"+v);
 		System.out.println("SPECIAL CHAR :"+s);
 		System.out.println("CONSTANT :"+c);
+		System.out.println("SPACE :"+sp);
 		System.out.println(" NUMBER :"+n);
 	}
 
